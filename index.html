@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,95 @@
 
 <body>
 
+    <div class="container">
+        <div class="user-container">
+    <div id="display-users"></div>
+    </div>
+
+<div class="friends">
+<ul id="display-friends"></ul>
+</div>
+
+
+ <div class="quote-container">
+ <div id="display-quote"></div>
+</div>
+
+
+
+
+<div class="content-container">
+        <div class="pokemon-container">
+                <div id="display-pokemon"></div>
+                </div>
+<div class="meat-text" id="display-meat"></div>
+</div>
+
+<div class="buttons">
+        <button id="loadData">Load User Data</button>
+        <button id="renderData">Display User</button>
+    </div> 
+</div>
+
+    
+    <script id="users-template" type="text/x-handlebars-template">
+     
+        <div class="user-info">
+<div>{{firstName}} {{lastName}}</div>
+<div>{{city}}, {{state}}</div>
+<img id="profile-pic" src={{photo}} alt="">
+</div>
+</script>
+
+<script id="friends-template" type="text/x-handlebars-template">
+    <div>{{firstName}} {{lastName}}</div>
+    </script>
+
+    <script id="quote-template" type="text/x-handlebars-template">
+        <p>Favorite Quote:</p>
+        <div>{{quote}}</div>
+        <div>-Kanye West</div>
+   </script>
+
+   
+<script id="pokemon-template" type="text/x-handlebars-template">
+    <P id="pokemon-text"> Favorite Pokemon: </P>
+    <div>{{name}}</div>
+<img id="pokemon-image" src={{image}}>
+</script>
+
+<script id="meat-template" src="text/x-handlebars-template">
+    <h1>About Me:</h1>
+   <div>{{meat}}</div>
+   </script>
+
+<script src="jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="APIManager.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+
+
 </body>
 
 </html>
+
+
+
+<!-- <div id="HandleBarsHere"></div>
+
+
+<div class="content-container">
+   <button>Click</button> 
+<div class="pokemon-container">
+    <img id="pokemon-image"
+        src="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-rumble-rush/pokemon-rumble-rush-169.jpg">
+    
+</div>
+
+
+
+ <div id=gen-page:focus>gen-page</div> -->
+<!-- 
+
+
